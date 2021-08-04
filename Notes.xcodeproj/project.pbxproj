@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB7A427626BAC8C900032274 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A427526BAC8C900032274 /* DetailView.swift */; };
+		CB7A427826BACCF400032274 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A427726BACCF400032274 /* CreditsView.swift */; };
+		CB7A427B26BACD3D00032274 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A427A26BACD3D00032274 /* HeaderView.swift */; };
+		CB7A427D26BAD26A00032274 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A427C26BAD26A00032274 /* SettingsView.swift */; };
 		CB91A8DB26B3F89B00D04D8E /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CB91A8DA26B3F89B00D04D8E /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB91A8E026B3F89D00D04D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB91A8DF26B3F89D00D04D8E /* Assets.xcassets */; };
 		CB91A8E726B3F89E00D04D8E /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB91A8E626B3F89E00D04D8E /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +19,7 @@
 		CB91A8F026B3F89E00D04D8E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91A8EF26B3F89E00D04D8E /* ComplicationController.swift */; };
 		CB91A8F226B3F89F00D04D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB91A8F126B3F89F00D04D8E /* Assets.xcassets */; };
 		CB91A8F526B3F89F00D04D8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB91A8F426B3F89F00D04D8E /* Preview Assets.xcassets */; };
+		CB91A90726B3FAF900D04D8E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91A90626B3FAF900D04D8E /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB7A427526BAC8C900032274 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CB7A427726BACCF400032274 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		CB7A427A26BACD3D00032274 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CB7A427C26BAD26A00032274 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CB91A8D626B3F89B00D04D8E /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB91A8DA26B3F89B00D04D8E /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB91A8DF26B3F89D00D04D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +80,7 @@
 		CB91A8F126B3F89F00D04D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB91A8F426B3F89F00D04D8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB91A8F626B3F89F00D04D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB91A90626B3FAF900D04D8E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB7A427926BACD3000032274 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A427A26BACD3D00032274 /* HeaderView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		CB91A8CF26B3F89B00D04D8E = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +133,9 @@
 		CB91A8EA26B3F89E00D04D8E /* Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CB91A8EB26B3F89E00D04D8E /* ContentView.swift */,
+				CB7A427926BACD3000032274 /* Component */,
+				CB91A90526B3FAD800D04D8E /* Model */,
+				CB91A90426B3FAC700D04D8E /* View */,
 				CB91A8ED26B3F89E00D04D8E /* NotesApp.swift */,
 				CB91A8EF26B3F89E00D04D8E /* ComplicationController.swift */,
 				CB91A8F126B3F89F00D04D8E /* Assets.xcassets */,
@@ -131,6 +151,25 @@
 				CB91A8F426B3F89F00D04D8E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB91A90426B3FAC700D04D8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB91A8EB26B3F89E00D04D8E /* ContentView.swift */,
+				CB7A427526BAC8C900032274 /* DetailView.swift */,
+				CB7A427726BACCF400032274 /* CreditsView.swift */,
+				CB7A427C26BAD26A00032274 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB91A90526B3FAD800D04D8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB91A90626B3FAF900D04D8E /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB91A8EC26B3F89E00D04D8E /* ContentView.swift in Sources */,
+				CB7A427D26BAD26A00032274 /* SettingsView.swift in Sources */,
 				CB91A8EE26B3F89E00D04D8E /* NotesApp.swift in Sources */,
 				CB91A8F026B3F89E00D04D8E /* ComplicationController.swift in Sources */,
+				CB7A427826BACCF400032274 /* CreditsView.swift in Sources */,
+				CB7A427626BAC8C900032274 /* DetailView.swift in Sources */,
+				CB91A90726B3FAF900D04D8E /* Note.swift in Sources */,
+				CB7A427B26BACD3D00032274 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
